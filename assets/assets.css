@@ -180,22 +180,6 @@ p {
     }
 }
 
-/*
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    line-height: 4em;
-}
-
-.main {
-    -moz-box-flex: 70%;
-    -ms-flex: 70%;
-    flex: 70%;
-    background-color: #f3f3f3;
-    padding: 25px;
-}
-*/
-
 .container {
     font-size: 24px;
     margin: 25px;
@@ -242,8 +226,8 @@ p {
     width: 100%;
     bottom: 0;
     padding-bottom: 20px;
-
 }
+
 .card {
     width: 250px;
     height: 250px;
@@ -279,4 +263,3 @@ p {
     font-size: 15px !important;
     color: white !important;
 }
-
