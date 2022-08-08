@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,400;1,500&display=swap');
+
+*, 
+::before, 
+::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-rendering: optimizeSpeed;
+    font: 400;
+}
+
+::selection {
+    background-color: #264653;
+    color:#A8DADC;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p,
+span {
+    font: 500;
+    letter-spacing: .2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: black;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 22px;
+}
+
+
+.topnav {
+    transition: all 350ms ease 100ms;
+    overflow: hidden;
+    background-color: #a8dadc;
+    color: black;
+}
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-size: 22px;
+}
+  
+.active {
+    background-color: none;
+    color: white;
+}
+  
+.topnav .icon {
+    transition: all 350ms ease;
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    transition: all 350ms ease;
+    font-size: 22px;   
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 18px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    transition: all 350ms ease-in-out 350ms;
+    display: none;
+    position: absolute;
+    background-color: #a8dadc;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    transition: all 350ms ease;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    transition: all 350ms ease;
+    background-color: inherit;
+    color: #457B9D;
+}
+
+.dropdown-content a:hover {
+    transition: all 350ms ease;
+    background-color: inherit;
+    color: #457B9D;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+}
+
+/*
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 4em;
+}
+
+.main {
+    -moz-box-flex: 70%;
+    -ms-flex: 70%;
+    flex: 70%;
+    background-color: #f3f3f3;
+    padding: 25px;
+}
+*/
+
+.container {
+    font-size: 24px;
+    margin: 25px;
+    width: auto;
+    height: 400px;
+    /* Center vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.child {
+    text-align: center;
+}
+
+/*back to top*/
+.top-btn {
+    all: unset; 
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    transform:scale(1.05);
+    opacity: 0;
+    transition: .3s;
+}
+.top-btn :is(:hover, :focus) {
+    color: #A8DADC;
+    transition: 300ms all ease;
+}
+/****/
+
+.center_wrapper {
+    padding: 10px;
+    text-align: left;
+    display: inline-block;
+}
+
+.cards_wrapper {
+    background: #264653;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 20px;
+
+}
+.card {
+    width: 250px;
+    height: 250px;
+    margin: auto 20px;
+    display: inline;
+    color: white;
+}
+
+.card a {
+    text-decoration: none;
+    list-style: none;
+    color: whitesmoke;
+}
+
+.card a:hover {
+    transition: all 350ms ease;
+    color: #457B9D;
+    cursor: pointer;
+}
+
+.ion-icon{
+    width: 28px !important;
+    height: 28px !important;
+}
+
+.footer {
+    position: relative;
+    padding-top: 8px;
+    margin: 8px;
+}
+
+.footer.text h5 {
+    font-size: 15px !important;
+    color: white !important;
+}
+
