@@ -79,6 +79,10 @@ p {
     text-decoration: none;
     font-size: 22px;
 }
+
+a.icon {
+    padding: 15px 36px;
+}
   
 .active {
     background-color: none;
@@ -111,10 +115,24 @@ p {
     transition: all 350ms ease-in-out 350ms;
     display: none;
     position: absolute;
-    background-color: #a8dadc;
+    background-color: #999;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+}
+
+.dropbtn .ion-icon1 {
+    margin-top: 6px;
+    width: 18px !important;
+    height: 16px !important;
+    color: black;
+}
+
+.dropbtn .ion-icon1:hover {
+    color:  #457B9D;
+    cursor: pointer;
+    transform: rotate(-180deg);
+    transition: .3s ease all;
 }
 
 .dropdown-content a {
@@ -133,14 +151,21 @@ p {
     color: #457B9D;
 }
 
+button.dropbtn:hover{
+    cursor: pointer;
+}
+
 .dropdown-content a:hover {
-    transition: all 350ms ease;
-    background-color: inherit;
+    transition: all 350ms ease-in-out 250ms;
+    background-color: #666;
     color: #457B9D;
+    opacity: .8;
+    cursor: pointer;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+    transform-origin: top;
 }
 
 @media screen and (max-width: 600px) {
@@ -157,26 +182,42 @@ p {
     .topnav.responsive {
         position: relative;
     }
+
     .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
+
     .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+        float: none;
+        display: block;
+        text-align: center;
     }
+
+    div.dropdown {
+        text-align: center;
+    }
+
     .topnav.responsive .dropdown {
         float: none;
     }
+
     .topnav.responsive .dropdown-content {
         position: relative;
     }
+
+    .topnav.responsive a.active {
+        padding-top: 75px;
+    }
+
     .topnav.responsive .dropdown .dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
+        display: block;
+        width: 100%;
+    }
+
+    .topnav a {
+        text-align: center;
     }
 }
 
