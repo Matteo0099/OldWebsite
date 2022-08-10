@@ -12,59 +12,48 @@
 </head>
 
 <body>
-    <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        
-        <div class="dropdown" id="top">
-          <button class="dropbtn">
-                Projects 
-                <ion-icon name="caret-down-outline" class="ion-icon1"></ion-icon>
-          </button>
-          <div class="dropdown-content">
-            <a href="https://areacrewmonfalcone.it" target="_blank">"AreaCrew-Website"</a>
-            <a href="https://matteo0099.github.io/ilpiccone/" target="_blank">"Il Piccone"</a>
-            <!--<a href="#"></a>-->
-          </div>
-        </div> 
-
-        <div class="dropdown">
-            <button class="dropbtn">
-                Contact Me
-                <ion-icon name="caret-down-outline" class="ion-icon1"></ion-icon>
-            </button>
-            <div class="dropdown-content">
-                <a href="mailto:matteomania09@gmail.com">Email</a>
-                <a href="#contact">Socials</a>
-            </div>
+    <nav class="navbar">
+        <div class="brand-title">&lt;Matteo Manià/&gt;</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#" class="fancy-link">Home</a></li>
+            <li><a href="#" class="fancy-link">About</a></li>
+            <li><a href="#" class="fancy-link">Projects</a></li>
+            <li><a href="#" class="fancy-link">Contact</a></li>
+          </ul>
         </div>
-
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
+    </nav>
 
     <div class="container">
         <div class="child">
-            <h1>Hi, I'm Matt!</h1>
-            <p>I'm a Web developer, I love design <br>
-                and some backend of a Website.
+            <h1>Hi, I'm <span>&lt;Matt!/&gt;</span></h1>
+            <p>
+                I'm a Web developer, I love design <br>
+                and some backend of a Website.<br>
             </p>
         </div>
     </div>
 
     <div class="container" id="about">
         <div class="child">
-            <h1>About me</h1>
-            <p>I'm 17 y.o. and I'll became a Software-developer <br>
-                cauz I very like do this shit.
+            <span class="code-txt">&lt;About me/&gt;</span>
+            <p id="code">
+                I'm 17 y.o. , and I'll became <br>a Software-developer
+                cauz <br> I like do this shit.
             </p>
         </div>
     </div>
 
     <div class="container">
         <div class="child">
-            <h1>My projects</h1>
-            <p>I am working on some projects,<br>
-                and I want to improve my approach to programming more and more.<br>
+            <span class="code-txt">&lt;My projects/&gt;</span>
+            <p id="code">I am working on some projects, and I want to improve <br> 
+                my approach to programming more and more.<br>
                 You can visit 2 of my websites in the link <br>
                  in top of the page.
             </p>
@@ -73,8 +62,8 @@
 
     <div class="container">
         <div class="child">
-            <h1>Get in touch!</h1>
-            <p>Visit all my socials and go follow me; <br>
+            <span class="code-txt">&lt;Get in touch!/&gt;</span>
+            <p id="code">Visit all my socials and go follow me; <br>
                 You certainly need a website!<br>
                 Just need to contact me.
             </p>
@@ -88,7 +77,7 @@
     <footer>
         <div class="cards_wrapper">
             <div class="footer text">
-                <h5>All rights reserved &copy; zippo107 2022</h5>
+                <h5>All rights reserved &copy; <span class="foot-name"> zippo107 2022</span></h5>
             </div>
             <div class="center_wrapper" id="contact">
                 <div class="card">
